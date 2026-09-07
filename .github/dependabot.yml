@@ -2,7 +2,7 @@ version: 2
 updates:
   # Container images in Helm values files. The "docker" ecosystem parses
   # helm-values-style image blocks (repository/tag and registry/repository/tag).
-  # The "helm" ecosystem is NOT used for values files due to
+  # The "helm" ecosystem is NOT used for values files due to 
   # https://github.com/dependabot/dependabot-core/issues/12207
   - package-ecosystem: "docker"
     directories:
