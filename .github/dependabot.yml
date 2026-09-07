@@ -33,6 +33,9 @@ updates:
       # goemaxima is built in-repo with date-based tags (e.g. 2026080600-master-...)
       # whose ordering Dependabot cannot rank reliably
       - dependency-name: "*goemaxima*"
+      # v1.05 is a mis-tagged 2019 release (v1.0.5) that sorts above v1.0.12 and v1.1.1
+      - dependency-name: "lusotycoon/apache-exporter"
+        versions: ["v1.05"]
 
   # Base images of the two in-repo image builds
   - package-ecosystem: "docker"
