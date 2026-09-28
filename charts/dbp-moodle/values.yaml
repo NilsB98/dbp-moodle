@@ -173,7 +173,7 @@ dbpMoodle:
     # -- Which moodle-tools image to use
     image:
       repository: "ghcr.io/dbildungsplattform/moodle-tools"
-      tag: "1.2.0"
+      tag: "1.2.1"
 
   moodleUpdatePreparationHook:
     rules:
@@ -239,7 +239,7 @@ dbpMoodle:
     dump_kind: "full" # Possible values: full, custom
     image:
       repository: "ghcr.io/dbildungsplattform/moodle-tools"
-      tag: "1.2.0"
+      tag: "1.2.1"
     resources:
       limits:
         cpu: 2000m
@@ -565,7 +565,7 @@ etherpadlite:
   enabled: false
   image:
     repository: "ghcr.io/dbildungsplattform/etherpad"
-    tag: "2.6.1.0"
+    tag: "3.3.3.0"
   # Currently this data is doubled with the env vars because we need the fields for backup and retore jobs
   externalDatabase:
     # -- Type of DB to provision, possible values are "postgres"
@@ -683,7 +683,7 @@ etherpad-postgresql:
 moodlecronjob:
   image:
     repository: "ghcr.io/dbildungsplattform/moodle-tools"
-    tag: "1.2.0"
+    tag: "1.2.1"
   clusterRole:
     create: false
   serviceAccount:
@@ -735,7 +735,7 @@ moodlecronjob:
 backup-cronjob:
   image:
     repository: "ghcr.io/dbildungsplattform/moodle-tools"
-    tag: "1.2.0"
+    tag: "1.2.1"
   clusterRole:
     create: false
   serviceAccount:
